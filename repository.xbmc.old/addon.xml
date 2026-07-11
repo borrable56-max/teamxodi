@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.xbmc.old" name="Kodi 19 Add-on Repository" version="19.2.0" provider-name="Team Xodi">
+    <requires>
+        <import addon="xbmc.addon" version="19.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Kodi 19 Add-on Repository">
+        <dir>
+            <info compressed="false">https://mirrors.xmission.com/kodi/addons/matrix/addons.xml</info>
+            <checksum>https://mirrors.kodi.tv/addons/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://mirrors.kodi.tv/addons/matrix/</datadir>
+
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Official Kodi 19 Matrix RWTH Aachen University Mirror.</summary>
+        <summary lang="es_ES">Servidor espejo oficial RWTH Aachen para Kodi 19 Matrix.</summary>
+        <description lang="en_GB">High-speed academic mirrors endpoint manager deployed through the RWTH Aachen university network infrastructures. Bypasses root folder listing locks by indexing the raw binary database wrappers directly.</description>
+        <description lang="es_ES">Gestor de servidores académicos de alta velocidad desplegado mediante la infraestructura de red de la Universidad RWTH Aachen. Salta el bloqueo de exploración de carpetas indexando directamente las bases de datos binarias.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <website>https://kodi.tv</website>
+        <source>https://github.com</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
