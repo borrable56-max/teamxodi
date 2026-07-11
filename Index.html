@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodi 19 Matrix Proxy Repository</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+        }
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-300 antialiased min-h-screen flex flex-col justify-between">
+
+    <header class="border-b border-gray-800 bg-[#0e1422] py-4 px-6 sticky top-0 z-50 backdrop-blur-md bg-opacity-80">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="flex h-3 w-3 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                </span>
+                <span class="text-white font-bold tracking-wider code-font text-sm md:text-base">repository.xbmc.old</span>
+            </div>
+            <div class="flex space-x-4 text-xs md:text-sm">
+                <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 font-semibold">Kodi 19.x Matrix</span>
+                <span class="bg-gray-800 text-gray-400 px-3 py-1 rounded-full font-mono">v19.2.0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 md:py-20 flex-grow w-full">
+        <div class="text-center space-y-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Infraestructura Híbrida de Redirección para <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Kodi 19</span>
+            </h1>
+            <p class="text-gray-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
+                Un endpoint proxy optimizado que desacopla la sincronización de metadatos del almacenamiento masivo binario, enrutando descargas de alta velocidad a través de espejos académicos globales.
+            </p>
+            
+            <div class="pt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="https://mirrors.xmission.com/kodi/addons/matrix/addons.xml" target="_blank" class="w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-blue-500/20 transition duration-300 text-center text-sm">
+                    Explorar XML Maestro
+                </a>
+                <button onclick="copyToClipboard()" class="w-full sm:w-auto px-6 py-3 bg-[#131a2c] hover:bg-[#1b253f] text-gray-200 font-mono text-xs rounded-lg border border-gray-800 flex items-center justify-center space-x-2 transition duration-300">
+                    <span id="copy-text">ID: repository.xbmc.old</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-16 md:mt-24">
+            <div class="bg-[#0e1422] p-6 rounded-xl border border-gray-800 hover:border-blue-500/40 transition duration-300 glow-effect">
+                <div class="h-10 w-10 bg-blue-500/10 rounded-lg flex items-center justify-center border border-blue-500/20 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
+                </div>
+                <h3 class="text-white font-semibold text-lg mb-2">Infraestructura Asimétrica</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Reduce drásticamente el uso de memoria caché local. La estructura del índice se lee directamente desde servidores académicos dedicados evitando bloqueos de listados raíz de carpetas.
+                </p>
+            </div>
+
+            <div class="bg-[#0e1422] p-6 rounded-xl border border-gray-800 hover:border-indigo-500/40 transition duration-300 glow-effect">
+                <div class="h-10 w-10 bg-indigo-500/10 rounded-lg flex items-center justify-center border border-indigo-500/20 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="text-white font-semibold text-lg mb-2">Validación de Integridad</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Enrutamiento sincronizado con hashes MD5 criptográficos binarios a través del ecosistema oficial <code class="text-indigo-400 font-mono text-xs">mirrors.kodi.tv</code> para mitigar el <em>Structure Parsing Conflict</em>.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-[#060913] rounded-xl border border-gray-800 overflow-hidden">
+            <div class="bg-[#0e1422] px-4 py-3 border-b border-gray-800 flex justify-between items-center">
+                <span class="text-xs font-mono tracking-wide text-gray-400">addon.xml (Estructura de Red)</span>
+                <div class="flex space-x-1.5">
+                    <div class="w-3 h-3 rounded-full bg-gray-700"></div>
+                    <div class="w-3 h-3 rounded-full bg-gray-700"></div>
+                    <div class="w-3 h-3 rounded-full bg-gray-700"></div>
+                </div>
+            </div>
+            <div class="p-5 code-font text-xs md:text-sm overflow-x-auto text-blue-400 leading-relaxed">
+                <pre><span class="text-gray-500">&lt;!-- Estructura de Endpoints Oficiales --&gt;</span>
+&lt;<span class="text-indigo-400">dir</span>&gt;
+    &lt;<span class="text-indigo-400">info</span> <span class="text-amber-500">compressed</span>=<span class="text-emerald-400">"false"</span>&gt;https://mirrors.xmission.com/.../addons.xml&lt;/<span class="text-indigo-400">info</span>&gt;
+    &lt;<span class="text-indigo-400">checksum</span>&gt;https://mirrors.kodi.tv/.../addons.xml.md5&lt;/<span class="text-indigo-400">checksum</span>&gt;
+    &lt;<span class="text-indigo-400">datadir</span> <span class="text-amber-500">zip</span>=<span class="text-emerald-400">"true"</span>&gt;https://mirrors.kodi.tv/.../&lt;/<span class="text-indigo-400">datadir</span>&gt;
+&lt;/<span class="text-indigo-400">dir</span>&gt;</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-800 bg-[#060913] py-6 px-6 text-center text-xs text-gray-500">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+            <p>Infraestructura distribuida de uso abierto bajo Licencia GPL-2.0.</p>
+            <p class="flex items-center">
+                Desplegado a través de endpoints académicos de alto rendimiento
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function copyToClipboard() {
+            const textToCopy = "repository.xbmc.old";
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const copyTextSpan = document.getElementById("copy-text");
+                copyTextSpan.innerText = "¡Copiado con éxito!";
+                copyTextSpan.classList.add("text-emerald-400");
+                
+                setTimeout(() => {
+                    copyTextSpan.innerText = "ID: repository.xbmc.old";
+                    copyTextSpan.classList.remove("text-emerald-400");
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
+  
